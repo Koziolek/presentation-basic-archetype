@@ -76,6 +76,12 @@ mvn -Pdeployment deploy                          # uploads the bundle, publish m
 mvn -Pdeployment deploy -Dcentral.autoPublish=true
 ```
 
+`./release.sh` automates a whole release: it removes `-SNAPSHOT` (`versions:set`), commits `Release X`, runs
+`mvn clean deploy -Pdeployment` with `-Dcentral.autoPublish=true -Dcentral.waitUntil=published` (waits until Central
+reports PUBLISHED), tags `vX` and bumps to the next `-SNAPSHOT`. Options: `-y` (no question), `--push` (push branch and
+tag to origin), `--check-published` (resume after a deploy that failed although Central published). It needs a clean
+working tree and JDK 27. `maven-release-plugin` is configured too, but `release.sh` is the intended way.
+
 ## License
 
 Apache License 2.0 (see `LICENSE`).Je
