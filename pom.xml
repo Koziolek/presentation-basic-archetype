@@ -6,7 +6,7 @@
 
     <groupId>pl.koziolekweb</groupId>
     <artifactId>presentation-basic-archetype</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>presentation-basic-archetype</name>
@@ -46,7 +46,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.outputTimestamp>2026-11-25T13:00:12Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2026-11-25T13:12:14Z</project.build.outputTimestamp>
 
         <!-- Build tooling -->
         <archetype-packaging.version>3.4.1</archetype-packaging.version>
