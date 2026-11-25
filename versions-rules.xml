@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Rules for versions-maven-plugin: ignore pre-release versions when looking for updates. -->
+<ruleset comparisonMethod="maven"
+         xmlns="http://mojo.codehaus.org/versions/rule/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://mojo.codehaus.org/versions/rule/2.0.0 https://www.mojohaus.org/versions/versions-model/xsd/rule-2.0.0.xsd">
+    <ignoreVersions>
+        <ignoreVersion type="regex">(?i).*[-.](alpha|beta|m|rc|cr|ea|snapshot|b)[-.]?\d*.*</ignoreVersion>
+    </ignoreVersions>
+</ruleset>
